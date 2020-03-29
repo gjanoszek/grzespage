@@ -1,0 +1,49 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Cinzel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+  <nav class="navigation">
+    <ul class="navigation__buttons">
+      <li class="navigation__button"><a href="">Portfolio</a></li>
+      <li class="navigation__button"><a href="">Śluby</a></li>
+      <li class="navigation__button"><a href="">Eventy</a></li>
+    </ul>
+  </nav>
+
+  <nav class="navigation">
+    <ul class="navigation__buttons">
+      <li class="navigation__button"><a href="">Filmy</a></li>
+      <li class="navigation__button"><a href="">O mnie</a></li>
+      <li class="navigation__button"><a href="">Kontakt</a></li>
+    </ul>
+  </nav>
+    
+</header>
+<div>
+  <span class="instagram"></span>
+  <span class="facebook"></span>
+  <span class="youtube"></span>
+</div>
+
+<section class="layout__main">
+  {{ content }}
+</section>
+
+<footer>
+  <div class="contactEmail"></div>
+  <div class="contactPhone"></div>
+</footer>
+
+</body>
+</html>

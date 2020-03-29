@@ -1,0 +1,65 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vh;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.layout__main {
+  background-image: url($baseurl + '/assets/1.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layout-main {
+  .block {
+    &__element {
+      &--modifier {
+        &.is-active {
+
+        }
+        .is-green {
+
+        }
+      }
+    }
+  }
+}
+
+.layout-main > .block__element--modifier.is-active {
+
+}
+
+.layout-main > .block__element--modifier > .is-green {
+  
+}
