@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Cinzel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -15,8 +15,8 @@
 <header>
   <nav class="navigation">
     <ul class="navigation__buttons">
-      <li class="navigation__button"><a href="">Portfolio</a></li>
-      <li class="navigation__button"><a href="">Śluby</a></li>
+      <li class="navigation__button"><a data-scroll data-easing="easeInQuint" href="#ScrollTo">Portfolio</a></li>
+      <li class="navigation__button"><a href="/sluby">Śluby</a></li>
       <li class="navigation__button"><a href="">Eventy</a></li>
     </ul>
   </nav>
@@ -36,9 +36,9 @@
   <span class="youtube"></span>
 </div>
 
-<section class="layout__main">
-  {{ content }}
-</section>
+{{ content }}
+
+
 
 <footer>
   <div class="contactEmail"></div>

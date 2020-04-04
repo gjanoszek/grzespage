@@ -19,47 +19,101 @@ header {
   transform: translateX(-50%);
 }
 
-.layout__main {
-  background-image: url($baseurl + '/assets/1.jpg');
+.layout-default {
   width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
 }
 
+.layout__main {
+  background-image: url($baseurl + '/assets/images-main/1.jpg');
+}
+
+.layout__sluby {
+  background-image: url($baseurl + '/assets/images-sluby/1-4.jpg');
+}
+
+.layout__portfolio {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 580px repeat(6, 570px);
+  grid-gap: 15px;
+  padding: 20px;
+  grid-auto-flow: dense;
+
+  .image1Big {
+    grid-column: span 8;
+  }
+  .image2 {
+    grid-column: span 4;
+  }
+  .image3 {
+    grid-column: span 4;
+  }
+  .image4 {
+    grid-column: span 4;
+  }
+  .image5 {
+    grid-column: span 4;
+  }
+  .image6 {
+    grid-column: span 3;
+  }
+  .image7Big {
+    grid-column: span 6;
+  }
+  .image8 {
+    grid-column: span 3;
+  }
+  .image9 {
+    grid-column: span 4;
+  }
+  .image10Big {
+    grid-column: span 8;
+  }
+  .image11 {
+    grid-column: span 3;
+  }
+  .image12 {
+    grid-column: span 3;
+  }
+  .image13 {
+    grid-column: span 3;
+  }
+  .image14 {
+    grid-column: span 3;
+  }
+  .image15 {
+    grid-column: span 6;
+  }
+  .image16 {
+    grid-column: span 6;
+  }
 
 
 
 
+}
+.layout__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 
-
-
-
-
-
-
-
-
-
-.layout-main {
-  .block {
-    &__element {
-      &--modifier {
-        &.is-active {
-
-        }
-        .is-green {
-
-        }
-      }
+  &:hover {
+    img {
+      transform: scale(1.1)
     }
   }
-}
 
-.layout-main > .block__element--modifier.is-active {
-
-}
-
-.layout-main > .block__element--modifier > .is-green {
-  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
 }
