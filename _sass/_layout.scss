@@ -3,20 +3,22 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body {
-  background-color: grey;
+  background-color: rgb(244, 244, 244);
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100vh;
-  height: 50px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  position: absolute;
+  padding: 24px 15%;
+  z-index: 3;
 }
 
 .layout-default {
@@ -30,8 +32,38 @@ header {
   background-image: url($baseurl + '/assets/images-main/1.jpg');
 }
 
-.layout__sluby {
+.layout-sluby {
   background-image: url($baseurl + '/assets/images-sluby/1-4.jpg');
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  &__photos {
+    z-index: 1;
+    background-color: white;
+  }
+}
+.layout__omnie {
+  background-color: rgb(245, 248, 252);
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myPhoto {
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.4);
+  background-color: #D7D4D4;
+  border-radius: 255px 15px 270px 9px/15px 225px 15px 290px;
+  border: solid 4px #D7D4D4;
+  img {
+    margin-top: 4px;
+  }
+}
+.layout__text {
+  margin-left: 80px;
+  margin-bottom: 120px;
+  font-family: 'Pragati Narrow', sans-serif;
+  text-align: center;
+  
 }
 
 .layout__portfolio {
@@ -40,8 +72,10 @@ header {
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: 580px repeat(6, 570px);
   grid-gap: 15px;
-  padding: 20px;
+  padding: 10px;
   grid-auto-flow: dense;
+
+
 
   .image1Big {
     grid-column: span 8;
@@ -92,28 +126,25 @@ header {
     grid-column: span 6;
   }
 
-
-
-
-}
-.layout__image {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-
-  &:hover {
-    img {
-      transform: scale(1.1)
-    }
-  }
-
-  img {
+  .layout__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 50% 50;
-    cursor: pointer;
-    transition: .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover {
+      img {
+        transform: scale(1.1)
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+    }
   }
 }

@@ -9,23 +9,24 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{site.baseurl}}/styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Cinzel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pragati+Narrow&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <header>
   <nav class="navigation">
     <ul class="navigation__buttons">
-      <li class="navigation__button"><a data-scroll data-easing="easeInQuint" href="#ScrollTo">Portfolio</a></li>
+      <li class="navigation__button"><a data-scroll data-easing="easeInQuint" href="/#ScrollTo">Portfolio</a></li>
       <li class="navigation__button"><a href="/sluby">Śluby</a></li>
-      <li class="navigation__button"><a href="">Eventy</a></li>
+      <li class="navigation__button"><a href="/eventy/">Eventy</a></li>
     </ul>
   </nav>
 
   <nav class="navigation">
     <ul class="navigation__buttons">
-      <li class="navigation__button"><a href="">Filmy</a></li>
-      <li class="navigation__button"><a href="">O mnie</a></li>
-      <li class="navigation__button"><a href="">Kontakt</a></li>
+      <li class="navigation__button"><a href="/filmy/">Filmy</a></li>
+      <li class="navigation__button"><a href="/o-mnie">O mnie</a></li>
+      <li class="navigation__button"><a href="/kontakt/">Kontakt</a></li>
     </ul>
   </nav>
     
@@ -44,6 +45,11 @@
   <div class="contactEmail"></div>
   <div class="contactPhone"></div>
 </footer>
+
+<div class="arrows">
+</div>
+
+<script src="{{site.baseurl}}/assets/scripts/showButtonOnScroll.js"></script>
 
 </body>
 </html>
