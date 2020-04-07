@@ -1,4 +1,4 @@
-const scrollButt = document.querySelector('.arrows');
+let scrollButt = document.querySelector('.arrows');
 const showOnEl = document.getElementById('ScrollTo');
 
 if (showOnEl) {

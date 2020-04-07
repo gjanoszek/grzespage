@@ -3,13 +3,15 @@ layout: default
 permalink: /sluby/
 ---
 
-  <section class="layout-default layout-sluby flex flex-column"></section>
-  <section id="ScrollTo">
+  <section id="ScrollTop" class="layout-default layout-sluby flex flex-column"></section>
+  <section id="ScrollTo" class="layout-sluby__photos">
     <article class=""><img src="{{$site.baseurl}}/assets/images-sluby/wedding2.jpg" alt="wedding1"></article>
     <article class=""><img src="{{$site.baseurl}}/assets/images-sluby/wedding3.jpg" alt="wedding1"></article>
   </section>
   
-  <a data-scroll data-easing="easeOutQuint" href="/#ScrollTop" class="arrows"></a>
+  <a data-scroll data-easing="easeOutQuint" href="#ScrollTop" class="arrows"></a>
   <script src="{{site.baseurl}}/assets/scripts/showButtonOnScroll.js"></script>
+  <script src="{{site.baseurl}}/assets/scripts/smooth-scroll.min.js"></script>
+  <script src="{{site.baseurl}}/assets/scripts/scrollToSection.js"></script>
 
 
