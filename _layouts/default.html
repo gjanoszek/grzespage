@@ -13,10 +13,10 @@
 </head>
 <body>
 
-<header>
+<header data-scroll-header id="ScrollTop">
   <nav class="navigation">
     <ul class="navigation__buttons">
-      <li class="navigation__button"><a data-scroll data-easing="easeInQuint" href="/#ScrollTo">Portfolio</a></li>
+      <li class="navigation__button"><a data-scroll data-easing="easeOutQuint" href="/#ScrollTo">Portfolio</a></li>
       <li class="navigation__button"><a href="/sluby">Śluby</a></li>
       <li class="navigation__button"><a href="/eventy/">Eventy</a></li>
     </ul>
@@ -46,8 +46,9 @@
   <div class="contactPhone"></div>
 </footer>
 
-<div class="arrows">
-</div>
+
+
+<a data-scroll data-easing="easeOutQuint" href="/#ScrollTop" class="arrows"></a>
 
 <script src="{{site.baseurl}}/assets/scripts/showButtonOnScroll.js"></script>
 

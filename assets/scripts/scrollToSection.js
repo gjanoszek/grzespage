@@ -1,1 +1,5 @@
-const scroll = new SmoothScroll('a[href*="#ScrollTo"]', {easing: 'easeInQuint'});
+const scroll = new SmoothScroll('a[href*="#ScrollTo"]', {easing: 'easeOutQuint'});
+
+
+
+
