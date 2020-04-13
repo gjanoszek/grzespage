@@ -27,4 +27,8 @@
     -webkit-mask-image: url("#{$baseurl}/assets/icons/Youtube.svg");
     mask-image: url("#{$baseurl}/assets/icons/Youtube.svg");
   }
+
+  &--white {
+    background-color: white;
+  }
 }

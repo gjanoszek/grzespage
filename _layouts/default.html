@@ -33,25 +33,36 @@ css'>
       <li class="navigation__button"><a href="/kontakt/">Kontakt</a></li>
     </ul>
   </nav>
+
+
     
 </header>
-<div>
-  <span class="instagram"></span>
-  <span class="facebook"></span>
-  <span class="youtube"></span>
-</div>
 
+
+  <div class="social-icons">
+    <a class="social-icons__link icon icon__instagram {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.instagram.com/trust.gj"></a>
+    <a class="social-icons__link icon icon__facebook {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.facebook.com/grzesjanoszek"></a>
+    <a class="social-icons__link icon icon__youtube {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.youtube.com/user/xTheTrust"></a>
+  </div>
+
+
+  
 
 {{ content }}
 
 
 
 <footer>
-  <div class="flex justify-between col-8">
-    <span>Telefon: +48 509 272 025</span>
-    <span>Email: grzesjanoszek@gmail.com</span>
+  <div class="flex justify-between items-center col-10">
+    <span class="col-4">Telefon: +48 509 272 025</span>
+    <div class="col-4 flex justify-center">
+      <a class="social-icons__link icon icon--white icon__instagram" href="https://www.instagram.com/trust.gj"></a>
+      <a class="social-icons__link icon icon--white icon__facebook" href="https://www.facebook.com/grzesjanoszek"></a>
+      <a class="social-icons__link icon icon--white icon__youtube" href="https://www.youtube.com/user/xTheTrust"></a>
+    </div>
+    <span class="col-4">Email: grzesjanoszek@gmail.com</span>
   </div>
-  <div class="mt3">Grześ Janoszek Fotografia & Video</div>
+  <div class="mt5">Grześ Janoszek Fotografia & Video</div>
 </footer>
 
 

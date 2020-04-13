@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -17,6 +21,10 @@
 }
 .flexColumn {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .paddingBottom {
