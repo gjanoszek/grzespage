@@ -20,6 +20,15 @@
       text-decoration: none;
     }
   }
+
+  &--white {
+    .navigation__button {
+      a {
+        color: rgb(255, 225, 200);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
 }
 
 .arrows {
@@ -65,5 +74,38 @@
   }
   &:hover {
     opacity: 100%;
+  }
+}
+.header {
+  font-family: 'BebasNeue-Book';
+  letter-spacing: 5px;
+  font-size: 68px;
+  color: rgb(205, 209, 218);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  margin-top: 330px;
+  margin-left: 230px;
+  padding: 90px;
+}
+.header__paragraph {
+  font-size: 38px;
+  text-align: center;
+  font-family: 'BebasNeue-Light';
+}
+
+.social-icons {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 35px;
+  margin-left: 65px;
+  z-index: 4;
+
+  &__link {
+    margin: 7px;
+    opacity: 80%;
+
+    &:hover {
+    opacity: 100%;
+  } 
   }
 }

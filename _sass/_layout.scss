@@ -33,10 +33,11 @@ header {
 }
 
 .layout-sluby {
-  background-image: url($baseurl + '/assets/images-sluby/1-4.jpg');
+  background-image: url($baseurl + '/assets/images-sluby/slubyBackground.jpg');
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  
   &__photos {
     z-index: 2;
     background-color: white;
@@ -165,31 +166,17 @@ header {
 }
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   position: absolute;
-  padding-bottom: 32px;
   z-index: 3;
+  padding: $space-5;
   background-color: rgb(30, 30, 30);
-  height: 120px;
-  font-family: 'Pragati Narrow', sans-serif;
+  font-family: 'BebasNeue-Book';
+  letter-spacing: 1px;
   color: white;
   font-size: 16px;
   text-align: center;
-}
-.contactPhone {
-  padding-right: 200px;
-}
-.contactEmail {
-  padding-left: 300px;
-}
-.footerName {
-  display: flex;
-  width: 100%;
-  height: 40px;
-  bottom: 0;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
 }

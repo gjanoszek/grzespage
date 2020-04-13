@@ -1,0 +1,30 @@
+
+
+.icon {
+  width: 28px;
+  height: 28px;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  display: block;
+  background-color: black;
+  
+
+  &__instagram {
+    -webkit-mask-image: url("#{$baseurl}/assets/icons/Instagram.svg");
+    mask-image: url("#{$baseurl}/assets/icons/Instagram.svg");
+  }
+
+  &__facebook {
+    -webkit-mask-image: url("#{$baseurl}/assets/icons/Facebook.svg");
+    mask-image: url("#{$baseurl}/assets/icons/Facebook.svg");
+  }
+
+  &__youtube {
+    -webkit-mask-image: url("#{$baseurl}/assets/icons/Youtube.svg");
+    mask-image: url("#{$baseurl}/assets/icons/Youtube.svg");
+  }
+}

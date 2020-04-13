@@ -9,11 +9,15 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{site.baseurl}}/styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Cinzel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Pragati+Narrow&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pragati+Narrow&subset=latin,latin-ext' rel='stylesheet' type='text/
+css'>
+  <link href={{site.baseurl}}/assets/fonts/mensch.ttf rel="stylesheet" type='text/css'>
+  <link href={{site.baseurl}}/assets/fonts/MAXWELL-LIGHT.ttf rel="stylesheet" type='text/css'>
+  <link href={{site.baseurl}}/assets/fonts/MAXWELL-REGULAR.ttf rel="stylesheet" type='text/css'>
 </head>
 <body>
 
-<header data-scroll-header id="ScrollTop">
+<header class="{% if page.whiteNav == true %}navigation--white{% endif %}" data-scroll-header id="ScrollTop">
   <nav class="navigation">
     <ul class="navigation__buttons">
       <li class="navigation__button"><a data-scroll data-easing="easeOutQuint" href="/#ScrollTo">Portfolio</a></li>
@@ -37,15 +41,17 @@
   <span class="youtube"></span>
 </div>
 
+
 {{ content }}
 
 
 
 <footer>
-  <div class="contactPhone">Telefon: +48 509 272 025</div>
-  <div class="socialMedia"></div>
-  <div class="contactEmail">Email: grzesjanoszek@gmail.com</div>
-  <div class="footerName">Grześ Janoszek Fotografia & Video</div>
+  <div class="flex justify-between col-8">
+    <span>Telefon: +48 509 272 025</span>
+    <span>Email: grzesjanoszek@gmail.com</span>
+  </div>
+  <div class="mt3">Grześ Janoszek Fotografia & Video</div>
 </footer>
 
 

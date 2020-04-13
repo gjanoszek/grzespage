@@ -5,10 +5,22 @@
 .flex-column {
   flex-direction: column;
 }
-.centerVideo {
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.center {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+.paddingBottom {
   padding-bottom: 30px;
 }
+
 
