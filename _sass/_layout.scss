@@ -79,16 +79,13 @@ header {
   align-content: center;
   border: 3px;
   padding-top: 100px;
-
-
-  
 }
 
 .layout__portfolio {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 580px repeat(6, 570px);
+  grid-template-rows: 580px repeat(5, 570px);
   grid-gap: 15px;
   padding: 10px;
   grid-auto-flow: dense;
@@ -166,6 +163,35 @@ header {
     }
   }
 }
+#image-popup {
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    object-position: center;
+    z-index: 5;
+  }
+  
+}
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+
 footer {
   display: flex;
   flex-direction: column;
