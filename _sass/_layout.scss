@@ -65,12 +65,21 @@ header {
   margin-bottom: 120px;
   font-family: 'Pragati Narrow', sans-serif;
   text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+
+  @include tablet() {
+    font-size: 2px;
+  }
 }
+
 .layout__textKontakt {
   margin-left: 80px;
   margin-bottom: 120px;
   font-family: 'Pragati Narrow', sans-serif;
   text-align: center;
+  font-size: 20px;
+
 }
 .layout__videos {
   justify-content: center;
@@ -89,6 +98,14 @@ header {
   grid-gap: 15px;
   padding: 10px;
   grid-auto-flow: dense;
+
+  @include tablet() {
+    grid-template-columns: 2;
+  }
+
+  @include mobile() {
+    grid-template-columns: 1;
+  }
 
 
 

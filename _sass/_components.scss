@@ -11,6 +11,10 @@
     justify-content: space-between;
     width: 100%;
     font-size: 18px;
+
+    @include mobile() {
+      font-size: 10px;
+    }
   }  
 
   &__button {    
