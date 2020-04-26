@@ -31,4 +31,17 @@
   padding-bottom: 30px;
 }
 
+.mobile-hide {
+  @include mobile() {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+  @include mobile() {
+    display: block;
+  }
+}
+
 
