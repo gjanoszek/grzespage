@@ -12,8 +12,12 @@
     width: 100%;
     font-size: 18px;
 
+    @include tablet() {
+      font-size: 16px;
+    }
+
     @include mobile() {
-      font-size: 10px;
+      font-size: 12px;
     }
   }  
 
@@ -32,6 +36,19 @@
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
       }
     }
+  }
+}
+.navigation_buttons {
+
+  @include tablet() {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include mobile() {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -89,11 +106,29 @@
   margin-top: 330px;
   margin-left: 230px;
   padding: 90px;
+
+  @include tablet() {
+    font-size: 52px;
+  }
+
+  @include mobile() {
+    font-size: 34px;
+    margin-top: 350px;
+    margin-left: 170px;
+  }
 }
 .header__paragraph {
   font-size: 38px;
   text-align: center;
   font-family: 'BebasNeue-Light';
+
+  @include tablet() {
+    font-size: 28px;
+  }
+
+  @include mobile() {
+    font-size: 20px;
+  }
 }
 
 .social-icons {
@@ -101,7 +136,7 @@
   left: 0;
   top: 0;
   margin-top: 35px;
-  margin-left: 65px;
+  margin-left: 60px;
   z-index: 4;
 
   &__link {
@@ -111,5 +146,10 @@
     &:hover {
     opacity: 100%;
   } 
+  }
+
+  @include tablet() {
+    margin-top: 45px;
+    margin-left: 25px;
   }
 }

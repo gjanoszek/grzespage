@@ -4,6 +4,7 @@
 $baseurl: '{{ site.baseurl }}' ;
 
 @import 'reset';
+@import 'mixins';
 @import 'variables';
 @import 'spacing';
 @import 'layout';
@@ -13,4 +14,4 @@ $baseurl: '{{ site.baseurl }}' ;
 @import 'grid';
 @import 'gridArea';
 @import 'icons';
-@import 'mixins';
+
