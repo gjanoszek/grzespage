@@ -10,6 +10,7 @@ $baseurl: '{{ site.baseurl }}' ;
 @import 'layout';
 @import 'typography';
 @import 'components';
+@import 'components/index';
 @import 'flow';
 @import 'grid';
 @import 'gridArea';

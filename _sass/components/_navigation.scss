@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  height: 100%;
+
+  &__buttons { 
+    font-family: 'Cinzel', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+
+    @include tablet() {
+      font-size: 16px;
+    }
+
+    @include mobile() {
+      font-size: 12px;
+    }
+  }  
+
+  &__button {    
+    a {
+      color: black;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
+  }
+
+  &--white {
+    .navigation__button {
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+.navigation_buttons {
+
+  @include tablet() {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include mobile() {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

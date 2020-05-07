@@ -1,0 +1,92 @@
+.hamburger {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  z-index: 8;
+  position: fixed;
+  left: $space-3;
+}
+
+.hamburger, .hamNav {
+  transition: transform .3s .1s ease-in-out;
+}
+
+.hamburger--active {
+  transform: translateX(250px);
+}
+
+.hamburger__box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger__inner {
+  @include hamburger-line;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color .1s .2s ease-in-out;
+}
+.hamburger__inner::before,
+.hamburger__inner::after {
+  @include hamburger-line;
+
+  content: '';
+  left: 0;
+  transition: transform .2s .2s ease-in-out;
+
+}
+
+.hamburger__inner::before {
+  top: -10px;
+}
+
+.hamburger__inner::after {
+  top: 10px;
+}
+
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamNav {
+  height: 100vh;
+  width: 250px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-250px);
+}
+
+.hamNav--active {
+  transform: translateX(0px);
+}
+
+.hamNav__list {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.hamNav__item {
+  margin-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: #171717;
+  }
+}
