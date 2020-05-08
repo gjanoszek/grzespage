@@ -1,4 +1,4 @@
-const images = document.getElementsByClassName('layout__image');
+const images = document.getElementsByClassName('portfolio__image');
 const imgPopup = document.getElementById('image-popup');
 
 Array.from(images).forEach(img => {

@@ -1,0 +1,27 @@
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  padding-top: 100px;
+  padding-left: 130px;
+
+  @include tablet() {
+    padding-left: 80px;
+  }
+
+  @include mobile() {
+    padding-left: 70px;
+  }
+}
+
+.photo-me {
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.4);
+  background-color: #D7D4D4;
+  border-radius: 255px 15px 270px 9px/15px 225px 15px 290px;
+  border: solid 4px #D7D4D4;
+  img {
+    margin-top: 4px;
+  }
+}

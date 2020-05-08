@@ -37,17 +37,17 @@
       }
     }
   }
-}
-.navigation_buttons {
+  &_buttons {
 
-  @include tablet() {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  @include mobile() {
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
+    @include tablet() {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    @include mobile() {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }

@@ -1,0 +1,220 @@
+.portfolio {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 580px repeat(5, 570px);
+  grid-gap: 15px;
+  padding: 10px;
+  grid-auto-flow: dense;
+
+  &--popup {
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+      object-position: center;
+      z-index: 5;
+    }
+  }
+  
+  &--overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+  }
+
+
+  .image1Big {
+    grid-column: span 8;
+  }
+  .image2 {
+    grid-column: span 4;
+  }
+  .image3 {
+    grid-column: span 4;
+  }
+  .image4 {
+    grid-column: span 4;
+  }
+  .image5 {
+    grid-column: span 4;
+  }
+  .image6 {
+    grid-column: span 3;
+  }
+  .image7Big {
+    grid-column: span 6;
+  }
+  .image8 {
+    grid-column: span 3;
+  }
+  .image9 {
+    grid-column: span 4;
+  }
+  .image10Big {
+    grid-column: span 8;
+  }
+  .image11 {
+    grid-column: span 3;
+  }
+  .image12 {
+    grid-column: span 3;
+  }
+  .image13 {
+    grid-column: span 3;
+  }
+  .image14 {
+    grid-column: span 3;
+  }
+  .image15 {
+    grid-column: span 6;
+  }
+  .image16 {
+    grid-column: span 6;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover {
+      img {
+        transform: scale(1.1)
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+    }
+  }
+
+  @include tablet() {
+    grid-template-columns: 2;
+    grid-template-rows: repeat(570px);
+
+    .image1Big {
+      grid-column: span 6;
+    }
+    .image2 {
+      grid-column: span 6;
+    }
+    .image3 {
+      grid-column: span 6;
+    }
+    .image4 {
+      grid-column: span 6;
+    }
+    .image5 {
+      grid-column: span 6;
+    }
+    .image6 {
+      grid-column: span 6;
+    }
+    .image7Big {
+      grid-column: span 6;
+    }
+    .image8 {
+      grid-column: span 6;
+    }
+    .image9 {
+      grid-column: span 6;
+    }
+    .image10Big {
+      grid-column: span 6;
+    }
+    .image11 {
+      grid-column: span 6;
+    }
+    .image12 {
+      grid-column: span 6;
+    }
+    .image13 {
+      grid-column: span 6;
+    }
+    .image14 {
+      grid-column: span 6;
+    }
+    .image15 {
+      grid-column: span 6;
+    }
+    .image16 {
+      grid-column: span 6;
+    }
+  }
+  
+
+  @include mobile() {
+    grid-template-columns: 1;
+    grid-template-rows: 550px;
+
+    .image1Big {
+      grid-column: span 12;
+    }
+    .image2 {
+      grid-column: span 12;
+    }
+    .image3 {
+      grid-column: span 12;
+    }
+    .image4 {
+      grid-column: span 12;
+    }
+    .image5 {
+      grid-column: span 12;
+    }
+    .image6 {
+      grid-column: span 12;
+    }
+    .image7Big {
+      grid-column: span 12;
+    }
+    .image8 {
+      grid-column: span 12;
+    }
+    .image9 {
+      grid-column: span 12;
+    }
+    .image10Big {
+      grid-column: span 12;
+    }
+    .image11 {
+      grid-column: span 12;
+    }
+    .image12 {
+      grid-column: span 12;
+    }
+    .image13 {
+      grid-column: span 12;
+    }
+    .image14 {
+      grid-column: span 12;
+    }
+    .image15 {
+      grid-column: span 12;
+    }
+    .image16 {
+      grid-column: span 12;
+    }
+  }
+}
+
+
