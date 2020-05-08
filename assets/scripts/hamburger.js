@@ -1,10 +1,10 @@
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.hamNav');
+const hamburger = document.querySelector('.hamburger__button');
+const nav = document.querySelector('.hamburger__drawer');
 
 
 const handleClick = () => {
-  hamburger.classList.toggle('hamburger--active');
-  nav.classList.toggle('hamNav--active');
+  hamburger.classList.toggle('hamburger__button--active');
+  nav.classList.toggle('hamburger__drawer--active');
 
 }
 

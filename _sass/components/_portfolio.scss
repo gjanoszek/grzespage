@@ -7,7 +7,7 @@
   padding: 10px;
   grid-auto-flow: dense;
 
-  &--popup {
+  &__popup {
 
     width: 100vw;
     height: 100vh;
@@ -27,7 +27,7 @@
     }
   }
   
-  &--overlay {
+  &__overlay {
     position: fixed;
     width: 100vw;
     height: 100vh;

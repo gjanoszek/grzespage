@@ -1,79 +1,73 @@
 .hamburger {
-  padding: 10px;
-  display: inline-block;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  z-index: 8;
-  position: fixed;
-  left: $space-3;
-
-  &--active {
-    transform: translateX(250px);
-  }
-
-  &__box {
+  &__button {
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    z-index: 8;
+    position: fixed;
+    left: $space-3;
     width: 40px;
     height: 24px;
-    display: inline-block;
-    position: relative;
+
+    &--active {
+      transform: translateX(250px);
+      
+      .hamburger__button-icon { 
+        background-color: transparent;
+        
+        &::after {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+        
+        &::before {
+          transform: translateY(10px) rotate(45deg);
+        }
+      }
+    }
   }
 
-  &__inner {
+  &__button-icon {
     @include hamburger-line;
   
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     transition: background-color .1s .2s ease-in-out;
-  }
 
-  &__inner::before,
-  &__inner::after {
-  @include hamburger-line;
+    &::before,
+    &::after {
+      @include hamburger-line;
 
-  content: '';
-  left: 0;
-  transition: transform .2s .2s ease-in-out;
-  }
+      content: '';
+      left: 0;
+      transition: transform .2s .2s ease-in-out;
+    }
 
-  &__inner::before {
-    top: -10px;
+    &::before {
+      top: -10px;
+    }
+
+    &::after {
+      top: 10px;
+    }
   }
   
-  &__inner::after {
-    top: 10px;
-  }
-}
 
-.hamburger, .hamNav {
-  transition: transform .3s .1s ease-in-out;
-}
+  &__drawer {
+    height: 100vh;
+    width: 250px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
 
-.hamburger--active .hamburger__inner {
-  background-color: transparent;
-}
-
-.hamburger--active .hamburger__inner::before {
-  transform: translateY(10px) rotate(45deg);
-}
-
-.hamburger--active .hamburger__inner::after {
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-.hamNav {
-  height: 100vh;
-  width: 250px;
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-250px);
-
-  &--active {
-    transform: translateX(0px);
+    &--active {
+      transform: translateX(0px);
+    }
   }
 
   &__list {
@@ -88,5 +82,9 @@
       text-decoration: none;
       color: #171717;
     }
+  }
+
+  &__button, &__drawer {
+    transition: transform .3s .1s ease-in-out;
   }
 }

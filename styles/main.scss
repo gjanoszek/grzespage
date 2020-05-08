@@ -7,12 +7,8 @@ $baseurl: '{{ site.baseurl }}' ;
 @import 'mixins';
 @import 'variables';
 @import 'spacing';
-@import 'layout';
-@import 'typography';
-@import 'components';
-@import 'components/index';
-@import 'flow';
 @import 'grid';
-@import 'gridArea';
+@import 'layout';
+@import 'components';
+@import 'flow';
 @import 'icons';
-
