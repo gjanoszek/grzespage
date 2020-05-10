@@ -24,7 +24,7 @@ header {
 .layout {
   &-default {
     width: 100vw;
-    min-height: calc(100vh - 126px);
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
   }
@@ -58,7 +58,7 @@ header {
   }
 
   &-about {
-    // background-color: rgb(245, 248, 252);
+    min-height: calc(100vh - 126px);
     background-image: url($baseurl + '/assets/images-omnie/background3.jpg');
     padding-top: 70px;
     display: flex;
