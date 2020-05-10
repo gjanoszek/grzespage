@@ -13,10 +13,11 @@
   }
 
   @include mobile() {
+    margin-left: auto;
+    margin-right: $space-3;
+    margin-top: 100%;
     font-size: 34px;
-    margin-top: 350px;
-    margin-left: 230px;
-    padding-right: 130px;
+    text-align: center;
   }
   
   &__paragraph {
