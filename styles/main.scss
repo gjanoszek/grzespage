@@ -3,6 +3,7 @@
 
 $baseurl: '{{ site.baseurl }}' ;
 
+@import 'fonts';
 @import 'reset';
 @import 'mixins';
 @import 'variables';
