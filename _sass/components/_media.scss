@@ -1,18 +1,18 @@
 .video {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   width: 95%;
-  height: 95%;
+  height: 60vw;
   padding-top: 100px;
-  padding-left: 130px;
+  padding: 70px $space-3 0;
 
   @include tablet() {
-    padding-left: 80px;
+    height: 70vh;
   }
 
   @include mobile() {
-    padding-left: 70px;
+    height: 50vh;
   }
 }
 
@@ -23,5 +23,18 @@
   border: solid 4px #D7D4D4;
   img {
     margin-top: 4px;
+  }
+
+  @include mobile() {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding-bottom: 100px;
+    }
   }
 }

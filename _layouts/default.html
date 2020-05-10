@@ -6,13 +6,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" 
+  content="Grzegorz Janoszek film i fotografia. Fotografia ślubna, eventowa, produktowa. ">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{site.baseurl}}/styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Cinzel&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet">
-  <link href={{site.baseurl}}/assets/fonts/mensch.ttf rel="stylesheet" type='text/css'>
-  <link href={{site.baseurl}}/assets/fonts/MAXWELL-LIGHT.ttf rel="stylesheet" type='text/css'>
-  <link href={{site.baseurl}}/assets/fonts/MAXWELL-REGULAR.ttf rel="stylesheet" type='text/css'>
 </head>
 <body>
 
@@ -39,12 +38,12 @@
 
   <div class="hamburger__drawer">
     <ul class="hamburger__list">
-      <li class="hamburger__item"><a href="">Portfolio</a></li>
-      <li class="hamburger__item"><a href="">Śluby</a></li>
-      <li class="hamburger__item"><a href="">Eventy</a></li>
-      <li class="hamburger__item"><a href="">Filmy</a></li>
-      <li class="hamburger__item"><a href="">O mnie</a></li>
-      <li class="hamburger__item"><a href="">Kontakt</a></li>
+      <li class="hamburger__item"><a href="/#ScrollTo">Portfolio</a></li>
+      <li class="hamburger__item"><a href="/sluby">Śluby</a></li>
+      <li class="hamburger__item"><a href="/eventy/">Eventy</a></li>
+      <li class="hamburger__item"><a href="/filmy/">Filmy</a></li>
+      <li class="hamburger__item"><a href="/o-mnie">O mnie</a></li>
+      <li class="hamburger__item"><a href="/kontakt/">Kontakt</a></li>
     </ul>
   </div>
     
@@ -53,8 +52,8 @@
 
   <div class="social-icons">
     <a class="social-icons__link icon icon__instagram {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.instagram.com/trust.gj" aria-label="Instagram profile"></a>
-    <a class="social-icons__link icon icon__facebook {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.facebook.com/grzesjanoszek"></a>
-    <a class="social-icons__link icon icon__youtube {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.youtube.com/user/xTheTrust"></a>
+    <a class="social-icons__link icon icon__facebook {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.facebook.com/grzesjanoszek" aria-label="Facebook profile"></a>
+    <a class="social-icons__link icon icon__youtube {% if page.whiteNav == true %}icon--white{% endif %}" href="https://www.youtube.com/user/xTheTrust" aria-label="Youtube profile"></a>
   </div>
 
 
@@ -68,9 +67,9 @@
   <div class="flex justify-between items-center col-10">
     <span class="col-4">Telefon: +48 509 272 025</span>
     <div class="col-4 flex justify-center">
-      <a class="social-icons__link icon icon--white icon__instagram" href="https://www.instagram.com/trust.gj"></a>
-      <a class="social-icons__link icon icon--white icon__facebook" href="https://www.facebook.com/grzesjanoszek"></a>
-      <a class="social-icons__link icon icon--white icon__youtube" href="https://www.youtube.com/user/xTheTrust"></a>
+      <a class="social-icons__link icon icon--white icon__instagram" href="https://www.instagram.com/trust.gj" aria-label="Instagram icon"></a>
+      <a class="social-icons__link icon icon--white icon__facebook" href="https://www.facebook.com/grzesjanoszek" aria-label="Facebook icon"></a>
+      <a class="social-icons__link icon icon--white icon__youtube" href="https://www.youtube.com/user/xTheTrust" aria-label="Youtube icon"></a>
     </div>
     <span class="col-4">Email: janoszekfotovideo@gmail.com</span>
   </div>
@@ -79,7 +78,7 @@
 
 
 
-<a data-scroll data-easing="easeOutQuint" href="/#ScrollTop" class="arrows"></a>
+<a data-scroll data-easing="easeOutQuint" href="/#ScrollTop" class="arrows" aria-label="Instagram"></a>
 
 <script src="{{site.baseurl}}/assets/scripts/showButtonOnScroll.js"></script>
 <script src="{{site.baseurl}}/assets/scripts/hamburger.js"></script>
