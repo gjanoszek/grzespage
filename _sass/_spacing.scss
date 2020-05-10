@@ -44,3 +44,17 @@
   padding-top: $space-4;
   padding-bottom: $space-4;
 }
+
+@include mobile() {
+  .mobile-mt02 {
+    margin-top: $space-2;
+  }
+
+  .mobile-mt2 {
+    margin-top: $space-2;
+  }
+
+  .mobile-mb2 {
+    margin-bottom: $space-2;
+  }
+}

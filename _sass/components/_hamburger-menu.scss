@@ -35,8 +35,6 @@
     @include hamburger-line;
   
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     transition: background-color .1s .2s ease-in-out, border .1s .2s ease-in-out;
 
     &::before,
@@ -51,11 +49,11 @@
     }
 
     &::before {
-      top: -10px;
+      margin-top: -10px;
     }
 
     &::after {
-      top: 10px;
+      margin-top: 10px;
     }
   }
   

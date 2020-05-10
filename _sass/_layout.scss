@@ -28,7 +28,7 @@ header {
 .layout {
   &-default {
     width: 100vw;
-    height: 100vh;
+    min-height: calc(100vh - 126px);
     background-position: center;
     background-size: cover;
   }
@@ -61,13 +61,14 @@ header {
     }
   }
 
-  &-omnie {
+  &-about {
     // background-color: rgb(245, 248, 252);
     background-image: url($baseurl + '/assets/images-omnie/background3.jpg');
     padding-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 
     div:last-child {
         margin-left: 80px;
@@ -78,11 +79,11 @@ header {
         letter-spacing: 0.5px;
       
         @include tablet() {
-          font-size: 14px;
+          font-size: 17px;
         }
       
         @include mobile() {
-          font-size: 14px;
+          font-size: 16px;
           margin-left: 0;
           p {
             text-align: center;
@@ -92,18 +93,7 @@ header {
 
     @include mobile() {
       flex-direction: column;
-    }
-  }
-
-  &-textKontakt {
-    margin-left: 80px;
-    margin-bottom: 10px;
-    font-family: 'Pragati Narrow', sans-serif;
-    text-align: center;
-    font-size: 20px;
-  
-    @include mobile() {
-      font-size: 14px;
+      justify-content: start;
     }
   }
 }
@@ -129,7 +119,8 @@ footer {
   }
 
   @include mobile() {
-    font-size: 10px;
+    font-size: 12px;
+    
   }
 }
 

@@ -31,7 +31,18 @@
   padding-bottom: 30px;
 }
 
+@include mobile() {
+  .mobile-flex-column {
+    flex-direction: column;
+  }
+
+  .mobile-order-3 {
+    order: 3;
+  }
+}
+
 .mobile-hide {
+  display: block;
   @include mobile() {
     display: none;
   }
@@ -43,5 +54,3 @@
     display: block;
   }
 }
-
-
