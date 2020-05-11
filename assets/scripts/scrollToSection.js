@@ -1,5 +1,1 @@
-const scroll = new SmoothScroll('a[href*="#ScrollTo"]', {easing: 'easeOutQuint'}, {speed: 500000});
-
-
-
-
+const scroll = new SmoothScroll('a[href*="#ScrollTo"]', {easing: 'easeOutQuint', speed: 100});
