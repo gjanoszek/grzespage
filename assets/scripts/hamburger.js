@@ -1,5 +1,4 @@
 const hamburgerButton = document.querySelector('.hamburger__button');
-const hamburgerButtonIcon = document.querySelector('hamburger__button-icon');
 const drawer = document.querySelector('.hamburger__drawer');
 
 const toggleHamburger = () => {
@@ -8,13 +7,12 @@ const toggleHamburger = () => {
 };
 
 const hideDrawer = () => {
-  if (drawer.classList.contains('hamburger__drawer--active') && event.target !== hamburgerButton) {
+  if (drawer.classList.contains('hamburger__drawer--active') && event.target !== hamburgerButton && !hamburgerButton.contains(event.target)) {
     hamburgerButton.classList.remove('hamburger__button--active');
     drawer.classList.remove('hamburger__drawer--active');
   }
 };
 
 hamburgerButton.addEventListener('click', toggleHamburger);
-hamburgerButtonIcon.addEventListener('click', toggleHamburger);
 
 document.addEventListener('click', hideDrawer);
