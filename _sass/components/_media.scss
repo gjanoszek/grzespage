@@ -9,10 +9,12 @@
 
   @include tablet() {
     height: 70vh;
+    width: 100%;
   }
 
   @include mobile() {
     height: 50vh;
+    width: 100%;
   }
 }
 
